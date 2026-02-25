@@ -31,7 +31,7 @@ Or copy it into one of these folders to install it system-wide:
 ## 1. Clone the project
 Clone the Github repository
 ```
-git clone https://github.com/OpenLXP/openlxp-xms.git
+git clone https://github.com/adlnet/ecc-openlxp-xms.git
 ```   
 
 ## 2. Set up your environment variables
@@ -130,7 +130,7 @@ docker-compose --env-file .env run app sh -c "coverage run manage.py test && cov
 
 The environment variables `SP_PUBLIC_CERT`, `SP_PRIVATE_KEY` , and `SP_ENTITY_ID` must be defined (if using docker-compose the variables can be passed through).
 
-Information on the settings for the authentication module can be found on the [OpenLXP-Authentication repo](https://github.com/OpenLXP/openlxp-authentication).
+Information on the settings for the authentication module can be found on the [OpenLXP-Authentication repo](https://github.com/adlnet/ecc-openlxp-authentication).
 
 
 ## Authorization
@@ -138,6 +138,8 @@ Information on the settings for the authentication module can be found on the [O
 The setting `OPEN_ENDPOINTS` can be defined in the django settings file.
 It is a list of strings (regex notation may be used) for URLs that should not check for authentication or authorization.
 
-## License
+## Additional Documentation
+[ECC-Openlxp Wiki can be found here](https://github.com/adlnet/ecc-openlxp-xds-ui/wiki)
 
- This project uses the [MIT](http://www.apache.org/licenses/LICENSE-2.0) license.
+## License
+This project uses the [Apache](http://www.apache.org/licenses/LICENSE-2.0) license.
